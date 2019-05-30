@@ -121,7 +121,7 @@ class Ui_MainWindow(object):
         self.timer_wait_to_refresh.timeout.connect(self.refresh_output_when_timeout)
 
         self.text_output = QTextEdit()
-        self.text_input.setFont(fontmono)
+        self.text_output.setFont(fontmono)
         self.text_output.resize(450, 600)
         self.text_output.setReadOnly(True)
         # self.text_output.setStyleSheet("background-color: gray")
