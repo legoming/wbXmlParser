@@ -47,7 +47,7 @@ class Ui_MainWindow(object):
             finput.writelines(a_input)
             finput.close()
             cmd = 'xml2wbxml'
-        fullcmd = cmd + ' -o ' + dirScript + '/output_file ' + dirScript + '/input_file'
+        fullcmd = 'export PATH=/usr/local/bin:$PATH;' + cmd + ' -o ' + dirScript + '/output_file ' + dirScript + '/input_file'
         output = subprocess.getstatusoutput(fullcmd)
         self.label_parse_result.setText(cmd) if output[0] == 0 else self.label_parse_result.setText(cmd + " failed")
         if output[0] == 0:

@@ -12,7 +12,7 @@ if __name__ == '__main__':
     sys.setrecursionlimit(10000)
 
     app = QApplication(sys.argv)
-    app.setWindowIcon(QIcon('Application.png'))
+    app.setWindowIcon(QIcon('Application.icns'))
     mainWin = QMainWindow()
     ui = main_window.Ui_MainWindow()
     ui.setupUi(mainWin)

@@ -9,7 +9,7 @@ from setuptools import setup
 
 APP = ['wbXmlParser.py']
 DATA_FILES = ['main_window.py']
-OPTIONS = {'iconfile': '/Users/lego/workspace/wbXmlParser/Application.png'}
+OPTIONS = {'iconfile': '/Users/lego/workspace/wbXmlParser/Application.icns'}
 
 setup(
     app=APP,
